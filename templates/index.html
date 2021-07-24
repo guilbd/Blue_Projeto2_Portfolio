@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Portfólio Guilherme Benvenuto</title>
+</head>
+<body>
+    <header>
+        <nav> 
+            <div id="icons">
+                <a href="https://github.com/guilbd" target="_blank"><img  class='mini' src="static/img/GitHub-Mark-32px.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/guilherme-benvenuto-65967436/" target="_blank"><img  class='mini' src="static/img/LinkedIn-Blue-14@2x.png" alt=""></a>
+                <a href="mailto:guilbd@hotmail.com"><img  class='mini' src="static/img/th.jfif"  width='40px' alt=""></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#sobre_mim">Sobre mim</a></li>
+                    <li><a href="#porfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>
+
+    <section id="sobre_mim">
+        <h1>Sobre mim</h1>
+        <div>
+            <ul>
+                <li>Meu nome é Guilherme Benvenuto</li>
+                <li>Residente em Belo Horizonte/MG</li>
+                <li>Graduado em Administração de Empresas com Habilitação em Comércio Exterior</li>
+                <li>Pós-graduado em Gerenciamento de Projetos</li>
+                <li>Pós-graduado em Gestão Estratégica de Empresas</li>
+                <li>Graduando em Análise e Desenvolvimento de Sistemas - 3º Período</li>
+                <li>Estudante na<a href='https://blueedtech.com.br' target="_blank"> Blue Edtech</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div>
+            <h1>Portfólio</h1>
+            <div id='completa'>
+                <div class="full-img">
+                    <img id="img" src="static/img/detetive.png">
+                </div> 
+                <div id='desc'>
+                    <div>
+                        <p id="texto">Projeto desenvolvido no Colab,
+                        utilizando Python e estruturas condicionais.</p>
+                    </div>
+                    <div id='logo'>
+                        <img id='proj-logo' src="static/img/logo_python-removebg-preview.png" alt="">
+                    </div>
+                    <div class="botao">
+                        <button id='btn' value="1">PROJETOS</button>           
+                    </div>
+              </div>
+            </div>
+            
+              
+              
+            
+        </div>
+    </section>
+    <section id="contato">
+        <form autocomplete="on" action="/send" method="POST">
+            <h1>Contato</h1>
+            <div class="form">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome">
+            
+            
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">   
+            
+            
+            
+                <label for="mensagem">Escreva a sua mensagem: </label>
+                <textarea name="mensagem" placeholder="Escreva aqui a sua mensagem" rows="10" cols="30"></textarea>
+            
+            
+                <button id='btn' onclick="alert('Enviando a mensagem!')" type="submit" width="60px">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <hr>
+    <footer>
+        <p>Guilherme Benvenuto &copy;</p>    
+    </footer>
+    
+</body>
+<script src='/static/js/script.js'></script>
+</html>
